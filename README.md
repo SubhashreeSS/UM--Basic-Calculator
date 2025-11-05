@@ -1,29 +1,38 @@
 # 🧮 Basic Calculator
 
-A simple and interactive **Basic Calculator** built using **HTML, CSS, and JavaScript**.  
-This project performs basic arithmetic operations such as addition, subtraction, multiplication, and division, and features keyboard input handling, error management, and a modern animated UI.
+A sleek and responsive **Basic Calculator** built using **HTML, CSS, and JavaScript**, featuring a glass–effect UI, light/dark themes, memory functions, and keyboard support.
 
 ---
 
-## 🚀 Features
-- Perform addition, subtraction, multiplication, and division.
-- Clear (`C`) and backspace (`⌫`) buttons.
-- Keyboard support for easy input.
-- Error handling (e.g., division by zero).
-- Smooth animated gradient background.
-- Responsive and visually appealing layout.
+## ✨ Features
+
+✅ **Basic Operations** — Addition, subtraction, multiplication, and division.  
+✅ **Advanced Features** — Percentage (%), sign toggle (±), and decimal support.  
+✅ **Memory Functions**  
+- 🧠 **M+** → Add to memory  
+- ➖ **M-** → Subtract from memory  
+- 📋 **MR** → Recall memory  
+- ❌ **MC** → Clear memory  
+✅ **Light / Dark Theme** — Smooth theme toggle 🌞🌙 saved in localStorage.  
+✅ **Keyboard Support** — Perform calculations directly from your keyboard.  
+✅ **Recent History** — Displays your latest calculations.  
+✅ **Glass-Effect Buttons** — Aesthetic translucent button design.  
+✅ **Responsive Layout** — Works seamlessly on desktop, tablet, and mobile.
 
 ---
 
-## 🧰 Technologies Used
-- **HTML** – Structure  
-- **CSS** – Styling and layout  
-- **JavaScript** – Calculator logic and interactivity  
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| ⚙️ **HTML5** | Structure and layout |
+| 🎨 **CSS3** | Styling, responsiveness, and glassmorphism |
+| 🧩 **JavaScript (ES6)** | Core calculator logic and theme handling |
 
 ---
+## 💻 Preview
+<p align="center">
+  <img src="./Light_theme.png" alt="Basic Calculator Preview" width="600px">
+  <img src="./Dark_theme.png" alt="Basic Calculator Preview" width="600px">
+</p>
 
-## 🧠 How It Works
-1. The user clicks or types numbers and operators.
-2. The input appears on the display.
-3. Press `=` or hit `Enter` to evaluate.
-4. The calculator follows standard operator precedence (BODMAS).
