@@ -1,0 +1,181 @@
+:root {
+  /* LIGHT THEME COLORS */
+  --light-bg: #ebdfdf;
+  --dark-bg: #000000de;
+  --light-display: #f3f4f7;
+  --dark-display: #0a0a0a;
+  --light-num: #cfd3dc;
+  --dark-num: #333;
+  --light-op: #f0a64a;
+  --dark-op: #f29930;
+  --light-text: #000;
+  --dark-text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* Toggle */
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.toggle-btn {
+  width: 70px;
+  height: 35px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-btn::before {
+  content: "🌞";
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.dark::before {
+  content: "🌙";
+  left: 38px;
+  color: #fff;
+}
+
+/* Calculator Container */
+.calculator {
+  width: 420px;
+  background: var(--light-display);
+  border-radius: 40px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .calculator {
+  background: var(--dark-display);
+}
+
+/* Display */
+.display {
+  height: 163px;
+  text-align: right;
+  font-size: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 15px 20px;
+  color: inherit;
+}
+
+.recent {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  white-space: pre-line;
+  height: 70px;
+  overflow: hidden;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Number buttons */
+.num {
+  background: var(--light-num);
+  color: var(--light-text);
+}
+body.dark .num {
+  background: var(--dark-num);
+  color: var(--dark-text);
+}
+
+/* Operator buttons */
+.op {
+  background: var(--light-op);
+  color: #fff;
+}
+body.dark .op {
+  background: var(--dark-op);
+  color: #000;
+}
+
+/* Zero button */
+.zero {
+  grid-column: span 2;
+  border-radius: 40px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .calculator {
+    width: 95%;
+    padding: 25px;
+  }
+  button {
+    height: 70px;
+  }
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  color: #b8aeae;
+}
+.footer-link {
+  color: #b8aeae;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
